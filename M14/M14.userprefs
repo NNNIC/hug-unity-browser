@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\htmlProject\Source\hug_u\_html\hglRender.cs">
+    <Files>
+      <File FileName="Assets\htmlProject\Source\hug_u\_html\hglStyle.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_html\hglCalcTable2.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\hug_u\_html\hglParser.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_debug\hglColorTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_html\hglButtonLink.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_html\hglReadHtml.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_html\hglTags_body.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\hug_u\_html\hglBaseBody.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_script\xmlScriptJS_TOOL.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\_html\hglHtmlRenderInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets\htmlProject\Source\hug_u\_html\hglRender.cs" Line="1295" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="F:\project\M14\Assets\htmlProject\Source\_html\hglResourceMan.cs" line="32" />
+      <Breakpoint file="F:\project\M14\Assets\htmlProject\Source\_html\hglResourceMan.cs" line="168" />
+      <Breakpoint file="F:\project\M14\Assets\htmlProject\Source\_html\hglResourceMan.cs" line="143" />
+      <Breakpoint file="F:\project\M14\Assets\htmlProject\Source\_html\hglRender.cs" line="583" />
+      <Breakpoint file="F:\project\M14\Assets\htmlProject\Source\_html\hglReadHtml.cs" line="64" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

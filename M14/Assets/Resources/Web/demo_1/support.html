@@ -1,0 +1,151 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>Page0</title>
+  <style>
+  <!--
+   body    { background:#7f7f7f atlas(Koujicyu2)  }
+
+    h1     { font-size:40 ; color:white ; text-align:center ; text-outline: 2 1 red }
+    h2     { font-size:30 ; color:blue ; text-align:left  ; text-outline: 2 1 white}
+    h3     { font-size:20 ; color:blue ; text-align:center  ; text-outline: 2 0 white}
+    p      { font-size:25 ; color:white; text-align:left; text-shadow: 2 2 blue }
+    pre    { font-size:25 ; color:white; text-align:left; text-shadow: 2 2 blue }
+    table  { text-align:center                             }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:10 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }
+    .center { font-size:40 ; color:white ; text-align:center ; text-outline: 2 0 red }
+    .center2 { font-size:30 ; color:white ; text-align:center ; text-outline: 2 0 blue }
+    .center3 { font-size:25 ; color:red ; text-align:center ; text-outline: 2 0 white }
+	-->
+  </style>
+ </head>
+
+ <body>
+
+<h1>機能一覧</h1>
+<br>
+<br>
+<br>
+<h2>HTML シミュレータ Ver.0.9 </h2>
+<pre>
++- A
+|  &lt;a&gt;        実装  //注意：ボタン表示
+|  &lt;address&gt;  実装  //注意：表示のみ
+-- B
+|  &lt;body&gt;     実装
+|  &lt;br&gt;       実装
+-- C
+|  &lt;canvas&gt;   実装  //注意：スペースを取るのみ。
+-- D
+|  &lt;div&gt;      実装
+-- F
+|  &lt;footer&gt;   実装 //注意：無視される
+|  &lt;font&gt;     実装 //注意：フォント属性のみ反映
+|  &lt;form&gt;     実装 
+-- H
+|  &lt;h1&gt;       実装 
+|  &lt;h2&gt;       実装 
+|  &lt;h3&gt;       実装 
+|  &lt;h4&gt;       実装 
+|  &lt;h5&gt;       実装 
+|  &lt;h6&gt;       実装 
+|  &lt;head&gt;     実装 
+-- I
+|  &lt;img&gt;      実装 
+|  &lt;input&gt;    対応中
+-- L
+|  &lt;li&gt;       対応中
+-- P
+|  &lt;p&gt;        実装
+-- S
+|  &lt;spacer&gt;   対応中
+|  &lt;span&gt;     実装
+|  &lt;style&gt;    実装
+-- T
+|  &lt;title&gt;    実装 //注意：無視される
+|  &lt;table&gt;    実装
+|  &lt;td&gt;       実装
+|  &lt;th&gt;       実装
+|  &lt;tr&gt;       実装
+-- U
+|  &lt;ul&gt;       実装
+
+</pre>
+
+<br>
+<br>
+<br>
+<h2>CSS シミュレータ Ver.0.8 </h2>
+<pre>
+-- Color
+|  color,
+-- Margin
+|  margin,
+|  margin_top,
+|  margin_right,
+|  margin_bottom,
+|  margin_left,
+
+-- Size
+|  max_width,
+
+-- Background
+|  background,
+|  background_color,
+|  background_image,
+|  background_atlas,
+-- Font
+|  font_size,
+|  font_style,
+|  font_weight,
+|  line_height,
+-- Text
+|  text_align,
+|  text_shadow,
+|  text_outline,  // original
+
+</pre>
+<br>
+<br>
+<br>
+<h2>Javascript 簡易シミュレータ Ver.0.2</h2>
+<pre>
+
+-- 数値等
+|   整数　   ex) 1
+|   実数　　 ex) 1.23         //注意: 小数点で区別。1.0は実数
+|   string   ex) s = "hoge"
+-- 配列
+|   なし
+-- 宣言
+|  変数      ex) var i ;      //宣言無しはグローバル
+|　関数      ex) function xx(){ hohe();}
+-- 型
+|  int/float/string
+-- 制御
+|  if else   
+|  switch    未
+|  for       ex) for(i=0;i&gt;10;i++) Debug.Log(i);
+|  for in    未
+|  while     ex) i=0; while(i&gt;10) {i++;}
+|  break
+|  continue
+-- 演算
+|  ２項演算子 * / % + - == &lt; &gt; &lt;= &gt;=
+|  単項演算子 + - ++ --
+-- Unityアクセス
+|  monobehaviour のパブリックメンバ・メソッド
+|  UnityEngine
+-- .NETアクセス
+|  System下のパブリックスタティックメンバ・メソッド
+-- Javascript互換関数
+|  documentの一部
+</pre>
+
+ </body>
+
+</html>

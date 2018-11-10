@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>Page0</title>
+  <style>
+  <!--
+   body    { background:#7f7f7f atlas(Koujicyu2)  }
+
+    h1     { font-size:40 ; color:white ; text-align:center ; text-outline: 2 1 red }
+    h2     { font-size:30 ; color:blue ; text-align:left  ; text-outline: 2 1 white}
+    h3     { font-size:20 ; color:blue ; text-align:center  ; text-outline: 2 0 white}
+    p      { font-size:25 ; color:white; text-align:left; text-shadow: 2 2 blue }
+    table  { text-align:center                             }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:10 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }
+    .center { font-size:40 ; color:white ; text-align:center ; text-outline: 2 0 red }
+    .center2 { font-size:30 ; color:white ; text-align:center ; text-outline: 2 0 blue }
+    .center3 { font-size:25 ; color:red ; text-align:center ; text-outline: 2 0 white }
+	-->
+  </style>
+ </head>
+
+ <body>
+  <br>
+  <h2>HTML/CSSテスト</h2>
+  <br>
+  <p class="center"><a href="http://tohoho-web.com/www.htm">とほほWWW入門</a></p>
+  <br>
+  <br>
+  <h2>Javascript/Unity命令テスト</h2>
+  <br>
+  <p class="center"><a href="../test/index.html">テスト/デモ<a></p>
+  <br>
+  <br>
+</html>

@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <style>
+  <!--
+   body     { background:#7f7f7f atlas(Koujicyu2)  }
+
+    h1      { font-size:30 ; color:white ; text-align:center ; margin:0 0; text-outline: 2 2 red }
+    h2      { font-size:10 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    p       { font-size:20 ; color:white; text-align:center; text-shadow: 2 2 blue }
+    table   { text-align:center                             }
+    th      { font-size:20 ; color:red  ; text-align:center }
+    td      { font-size:10 ; color:white; text-align:left   }
+    .note   { color:yellow }
+    .emp    { color:red    }
+    .rotate { update-z-axis:100 }
+
+	-->
+  </style>
+  <script>
+  <!--
+   function GetCanvasPosition()
+   {
+        var go = canvas.gameObject;
+        var v  = go.transform.localPosition;
+	return v;
+   }
+   
+   createdOspray = 0;
+   function CreateOspray()
+   {
+       if (createdOspray==1) return;
+       createdOspray = 1;
+
+       var prefab = Resources.Load("ospray");
+       var go = Object.Instantiate(prefab);
+       
+       var parent = canvas.gameObject.transform;
+       go.transform.parent=parent;
+       
+       go.transform.localScale = Vector3.one * 18;
+       go.transform.localPosition= new Vector3(240,-100,-100);
+       go.transform.localEulerAngles = new Vector3(10,0,0);
+       
+       ospray[1] = go; // make it global
+       ospray_L_engine = go.transform.Find("engineL");  
+       ospray_R_engine = go.transform.Find("engineR");  
+
+       ospray_L_propeller = ospray_L_engine.Find("propeller"); 
+       ospray_R_propeller = ospray_R_engine.Find("propeller");  
+
+       S_SetUpdateFunc(go,"UpdateOspray");
+   }
+
+   function UpdateOspray()
+   {
+        ospray[1].transform.RotateAroundLocal(Vector3.up,0.01);
+	ospray_L_propeller.transform.RotateAroundLocal(Vector3.up,-1.0);
+	ospray_R_propeller.transform.RotateAroundLocal(Vector3.up,1.0);
+   }
+   
+
+  -->
+ </script>
+ </head>
+ <body>
+  <h1>デモ<h1>
+  <p>
+   ※モデルの動作をスクリプトで実装してあります。<br>
+   ※右横のソースボタンで確認下さい。
+  </p>
+  <canvas id="#canvas" width=480 height=640 />
+  <script>
+  <!--
+   function CREATE()
+   {
+	canvas = document.getElementById("#canvas");
+	var v = GetCanvasPosition();
+        CreateOspray();
+   }
+   -->
+  </script>
+  <p>
+    <a onclick="CREATE()">スタート!</a>
+  </p>
+  <br>
+  <br>
+  <p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

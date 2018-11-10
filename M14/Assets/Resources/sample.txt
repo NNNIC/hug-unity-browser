@@ -1,0 +1,120 @@
+   FNC = location.search_get("FNC"); 
+  DIR = location.search_get("DIR"); 
+  DLY = location.search_get("DLY"); 
+  CLF = location.search_get("CLF"); 
+
+  if (FNC!="")
+  {
+Debug.Log("FNC DEFINED. FNC=" + FNC );
+	TOOL.LOCKCAMERA(1);
+	TOOL.STARTPOS(DIR);
+	SETSTARTFUNC(null,"START_"+FNC);
+  }
+  
+  if (CLF!="")
+  {	
+	Debug.Log("FNC DEFINED. CLF=" + CLF );
+  }
+
+
+  function START_SLD()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.2,"+DLY ],"UNLOCKCAM");
+  }
+  function START_FX()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_SZ,h1,100,0.2"],"UNLOCKCAM");
+  }
+  function START_FX1()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_SZ,p,100,0.2"],"UNLOCKCAM");
+  }
+  function START_FX2()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_SZ,h1,100,0.2","FX_SZ,h2,100,0.2","FX_SZ,p,100,0.2"],"UNLOCKCAM");
+  }
+  function START_FX3()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_ROT,h1,x,10"],"UNLOCKCAM");
+  }
+  function START_FX4()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_ROT,h1,y,10"],"UNLOCKCAM");
+  }
+  function START_FX5()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_ROT,h1,z,10"],"UNLOCKCAM");
+  }
+  function START_FX6()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_ROT,img,z,10"],"UNLOCKCAM");
+  }
+  function START_FX7()
+  {
+      	TOOL.SEQACT(["APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY, "FX_ROT,body,z,1","FX_SZ,h1,100,0.2","FX_ROT,img,z,10"],"UNLOCKCAM");
+  }
+  function START_C1()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_COL,h1,main,black,100" ],"UNLOCKCAM");
+  }
+  function START_C2()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_COL,h1,effect,black,100" ],"UNLOCKCAM");
+  }
+  function START_C3()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_COL,p,back,blue,100" ],"UNLOCKCAM");
+  }
+  function START_C4()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_COL,h1,frame,red,100" ],"UNLOCKCAM");
+  }
+  function START_A1()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_ALFA,p,main,100" ],"UNLOCKCAM");
+  }
+  function START_A2()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_ALFA,img,main,100" ],"UNLOCKCAM");
+  }
+  function START_A3()
+  {
+      	TOOL.SEQACT([ "APART,"+DIR , "PLACE,0.4","SLIDEBACK,0.1,"+DLY , "FX_ALFA,img,main,100", "FX_ALFA,body,main,100" ],"UNLOCKCAM");
+  }
+
+
+  function UNLOCKCAM()
+  {
+        TOOL.LOCKCAMERA(0);
+  }
+
+  function ONCLK()
+  {
+	Debug.Log("ONCLK");
+        if (CLF!="")
+        {
+		CALL("ONCLK_" + CLF);
+        }
+        else 
+        {
+		ONCLK_END();
+	}
+  }
+  
+  function ONCLK_M1()
+  {
+	Debug.Log("CALLED ONCLK_M1");
+      	TOOL.SEQACT([ "SLIDE,"+ DIR + ",0.5,"+DLY ],"ONCLK_END");
+  }
+
+  function ONCLK_M2()
+  {
+	Debug.Log("CALLED ONCLK_M2");
+      	TOOL.SEQACT([ "SLIDE,"+ DIR + ",0.5,"+DLY+",2" ],"ONCLK_END");
+  }
+
+  function ONCLK_END()
+  {
+	location.href=location.href;
+  }
+

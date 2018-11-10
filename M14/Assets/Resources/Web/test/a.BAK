@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css"> 
+ </head>
+
+<body>
+<!--  ########################### 4 ########################  -->
+<h1> 配列テスト #4 </h1>
+<h2> スクリプト </h2>
+<pre>
+  var x = new Array();
+  x[1]  = new Array();
+  x[1][0] = "TEST";
+  document.write(x[1][0]);
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  var x = new Array();
+  x[1]  = new Array();
+  x[1][0] = "TEST";
+  document.write(x[1][0]);
+--></script>
+</p>
+
+<p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

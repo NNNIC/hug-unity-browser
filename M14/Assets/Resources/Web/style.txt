@@ -1,0 +1,11 @@
+   body    { background:#7f7f7f atlas(nijiback)  }
+
+    h1     { font-size:50 ; color:white ; text-align:center ; margin:150 0; text-outline: 2 2 red }
+    h2     { font-size:50 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    p      { font-size:35 ; color:white; text-align:center; text-shadow: 2 2 blue }
+    table  { text-align:center                              }
+    th     { font-size:50 ; color:red  ; text-align:center }
+    td     { font-size:30 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }

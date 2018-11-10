@@ -1,0 +1,4 @@
+function Update()
+{
+    transform.RotateAroundLocal(Vector3(0,0,1), 0.05); 
+}

@@ -1,0 +1,12 @@
+   body    { atlas(Koujicyu)  }
+
+    h1     { font-size:10 ; color:white ; text-align:center ; margin:10 10; text-outline: 2 2 red }
+    h2     { font-size:10 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    pre    { font-size:10 ; color:white; text-align:left; text-shadow: 2 2 blue }
+    p      { font-size:10 ; color:white; text-align:left; text-shadow: 2 2 red; margin:20 20 }
+    table  { text-align:center                              }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:10 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }

@@ -1,0 +1,88 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+<body>
+
+
+
+<h1> ONUPDATE #1 </h1>
+<h2> スクリプト </h2>
+<pre>
+  function updateTest()
+  {
+     transform.RotateAroundLocal(Vector3.forward,0.5);
+  }
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  function updateTest1()
+  {
+     transform.RotateAroundLocal(Vector3.forward,0.5);
+  }
+--></script>
+  <img src="../images/Doyoulab.jpg" width="100" height="50" onupdate="updateTest1()" />
+</p>
+
+<h1> ONUPDATE / ONCLICK  </h1>
+<h2> スクリプト </h2>
+<pre>
+  var mode = 0;
+  function updateTest2()
+  {
+     if (mode == 0) return;
+     else if (mode == 1) {
+     	transform.localPosition  =  transform.localPosition  +  Vector3.right;
+     }
+     else if (mode == 2)
+     {
+         mode = 0;
+         transform.localPosition  = new Vector3(0.0,transform.localPosition.y, transform.localPosition.z);
+     }
+  }
+  function onClickTest1() { 
+      mode = 2;
+  }
+  function onClickTest2() { 
+   if (mode  == 1) mode  = 0;
+   else            mode  = 1; 
+  }
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  var mode = 0;
+  function updateTest2()
+  {
+     if (mode == 0) return;
+     else if (mode == 1) {
+     	transform.localPosition  =  transform.localPosition  +  Vector3.right;
+     }
+     else if (mode == 2)
+     {
+         mode = 0;
+         transform.localPosition  = new Vector3(-200,transform.localPosition.y, transform.localPosition.z);
+     }
+  }
+  function onClickTest1() { 
+      mode = 2;
+  }
+  function onClickTest2() { 
+   if (mode  == 1) mode  = 0;
+   else            mode  = 1; 
+  }
+--></script>
+  <img src="../images/Doyoulab.jpg" width="100" height="50" onupdate="updateTest2()" /> <br>
+  <a onclick="onClickTest2()" style="font-size:30">スタート・ストップ</a> <br>
+  <a onclick="onClickTest1()" style="font-size:30">リセット</a> <br>
+  
+</p>
+  <p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

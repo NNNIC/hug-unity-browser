@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <!--
+  <link rel="top-bar" href="top.html" />
+  <link rel="bottom-bar" href="bot.html" />
+  <link rel="stylesheet" href="style.txt" />
+  -->
+  <style>
+  <!--
+   body     { background:#7f7f7f atlas(Koujicyu2)  }
+
+    h1      { font-size:30 ; color:white ; text-align:center ; margin:0 0; text-outline: 2 2 red }
+    h2      { font-size:10 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    p       { font-size:20 ; color:white; text-align:center; text-shadow: 2 2 blue }
+    table   { text-align:center                             }
+    th      { font-size:20 ; color:red  ; text-align:center }
+    td      { font-size:10 ; color:white; text-align:left   }
+    .note   { color:yellow }
+    .emp    { color:red    }
+    .rotate { update-z-axis:100 }
+
+	-->
+  </style>
+  <script>
+  <!--
+   //function GetCanvasPosition()
+   //{
+   //     var go = canvas.gameObject;
+   //     var v  = go.transform.localPosition;
+   //	return v;
+   //}
+   
+   function Load( model )
+   {
+       var prefab = Resources.Load(model);
+       var go     = Object.Instantiate(prefab);
+       go.transform.parent=canvas.gameObject.transform;
+
+       go.transform.localScale = Vector3.one * 8;
+       go.transform.localPosition= Vector3.zero;
+       go.transform.localEulerAngles = Vector3.zero;
+       
+       return go;
+   }
+
+   once = 0;
+   function INIT()
+   {
+        if (once==1) return;
+        once = 1;
+	canvas = document.getElementById("#canvas");
+	for(i=0;i<100;i++)
+        {
+           modelStar[i] = Load("Star-boy");
+        }
+        
+        var x = 30;
+        var xmax = 480 - 30;
+        var y = -30;
+        var step = (xmax - x)/9;
+        for(j = 0; j<10; j++)
+        {
+            for(i = 0; i < 10; i++)
+            {
+                modelStar[j*10+i].transform.localPosition = new Vector3(x+step * i, y - step * j);
+		S_SetUpdateFunc(modelStar[j*10+i],"UpdateStar");
+            }
+        }
+   }
+   function UpdateStar()
+   {
+       transform.RotateAroundLocal(Vector3.up,0.1);
+   }
+
+   
+  -->
+ </script>
+ </head>
+ <body>
+  <h1>デモ<h1>
+  <p>
+   ※モデルの動作をスクリプトで実装してあります。<br>
+   ※右横のソースボタンで確認下さい。
+  </p>
+  <canvas id="#canvas" width=480 height=640 />
+  <script>
+  <!--
+   function CREATE()
+   {
+	canvas = document.getElementById("#canvas");
+	var v = GetCanvasPosition();
+        CreateOspray();
+   }
+   -->
+  </script>
+  <p>
+    <a onclick="INIT()">スタート!</a>
+  </p>
+  <br>
+  <br>
+  <p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

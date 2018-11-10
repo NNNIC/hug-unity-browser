@@ -1,0 +1,164 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+<body>
+
+
+
+<h1> TEST 1 </h1>
+<table>
+<tr>
+
+<td>
+<pre>
+  document.write(1);                   
+  document.write(-123);                
+  document.write(123.4);               
+  document.write(123.4 + 10);          
+  document.write(123 + 10);            
+  document.write(123 + 10.5);          
+  document.write("A");                 
+  document.write("ABC");               
+  document.write("ABC" + "def");       
+</pre>
+</td>
+
+<td>
+<script><!--
+  document.write(1   );                  document.write("<br>");
+  document.write(-123);                  document.write("<br>");
+  document.write(123.4);                 document.write("<br>");
+  document.write(123.4 + 10);            document.write("<br>");
+  document.write(123 + 10);              document.write("<br>");
+  document.write(123 + 10.5);            document.write("<br>");
+  document.write("A");                   document.write("<br>");
+  document.write("ABC");                 document.write("<br>");
+  document.write("ABC" + "def");
+// --></script>
+</td>
+</tr>
+</table>
+
+<h1> TEST 2 </h1>
+<table>
+<tr>
+
+<td>
+<pre>
+  document.write(12/2);               
+  document.write(123/4);               
+  document.write(123.4/2);             
+  document.write(1*2*3);              
+  document.write(1+2*3);            
+  document.write(4+4/2);          
+  document.write((2+2)*4);                 
+  document.write(5%2);               
+  document.write(-3*2);       
+</pre>
+</td>
+
+<td>
+<script><!--
+  document.write(12/2);               document.write("<br>");
+  document.write(123/4);              document.write("<br>"); 
+  document.write(123.4/2);            document.write("<br>"); 
+  document.write(1*2*3);              document.write("<br>");
+  document.write(1+2*3);              document.write("<br>");
+  document.write(4+4/2);              document.write("<br>");
+  document.write((2+2)*4);            document.write("<br>");     
+  document.write(5%2);                document.write("<br>");
+  document.write(-3*2);       
+// --></script>
+</td>
+</tr>
+</table>
+
+<h1> TEST 3 </h1>
+<table>
+<tr>
+
+<td>
+<pre>
+  a = 1;
+  document.write(a++);               
+  document.write(a);               
+  document.write(++a);               
+  document.write(a);               
+  b = 100;
+  document.write(b--);             
+  document.write(b);               
+  document.write(--b);             
+  document.write(b);               
+</pre>
+</td>
+
+<td>
+<script><!--
+   a = 1;                              document.write("<br>");
+   document.write(a++);                document.write("<br>"); 
+   document.write(a);                  document.write("<br>"); 
+   document.write(++a);                document.write("<br>");
+   document.write(a);                  document.write("<br>");
+   b = 100;                            document.write("<br>");
+   document.write(b--);                document.write("<br>");     
+   document.write(b);                  document.write("<br>");
+   document.write(--b);                document.write("<br>");
+   document.write(b);                  
+// --></script>
+</td>
+</tr>
+</table>
+
+
+ <!-- 
+	function TitleUpdate(){
+          if (a==1) Debug.Log("yes");
+          else Debug.Log("no");
+	}
+ -->
+  <!--
+        var a = 0;
+	function TitleUpdate(){
+          if (a==0) 
+	  {
+		Debug.Log(a);
+                a = 1;
+          }
+          else if (a==1) 
+          {
+               Debug.Log(a);
+               a=2;
+          } 
+          else if (a==2)
+          {
+              Debug.Log(a);
+               a=3;
+          }
+          else 
+          {
+              Debug.Log(a);
+              a =0;
+          }
+
+	}
+
+      i = 0;
+      document.write("<p>");
+      while(i<10) {
+          document.write("i="+i/*ほげほげ*/ +"\n"); //ほげほげ
+          if (i==3) break;
+          i++;
+      }
+      document.write("</p>");
+
+      
+   
+
+  -->
+<p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>Page0</title>
+  <style>
+  <!--
+   *       { padding: 5 5 5 5 }
+   body    { background:#7f7f7f atlas(Koujicyu2)  }
+
+    h1     { font-size:30 ; color:white  ; background-color:white ; text-align:center  ; text-outline: 2 1 black; }
+    h2     { font-size:20 ; color:blue  ; background-color:white ; text-align:left    ; text-outline: 2 0 white ;  }
+    h3     { font-size:20 ; color:blue  ;                        ; text-align:center  ; text-outline: 2 0 white ; }
+    p      { font-size:15 ; color:white ; background-color:white ; text-align:center  ; text-shadow: 2 0 blue  ;  }
+    div    { background-color:gray    }
+    table  { text-align:center                             }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:10 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate   { update-z-axis:100 }
+    :link     { color:blue }
+    :visited  { color:red  }
+    :hover    { color:yellow }
+    :pressed  { color:red  }
+	-->
+  </style>
+ </head>
+
+ <body>
+  <div>
+    <h3><b>デモ<b></h3>
+    <h1>Unity3Dブラウザキット(仮)</h1>
+    <h3>Version. Alpha-12</h3>
+  </div>
+  <br>
+  <p style="font-size:20;width:200; background-color:yellow " ><a href="notice.html">スタート</a></p>
+  <br>
+  <p style="width:330; background-color:gray" >2013.5.29<br><i>Naruto Nishizawa<i></p>
+ </body>
+</html>

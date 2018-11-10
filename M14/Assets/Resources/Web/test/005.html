@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+<body>
+
+
+
+<h1> FUNCTION #1 </h1>
+<h2> スクリプト </h2>
+<pre>
+  function a()
+  {
+     document.write("called a");
+  }
+  function b()
+  {
+     document.write("called b");
+  }
+  function c()
+  {
+     document.write("called c");
+  }
+  a();
+  b();
+  c();
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  function a()
+  {
+     document.write("called a, ");
+  }
+  function b()
+  {
+     document.write("called b, ");
+  }
+  function c()
+  {
+     document.write("called c, ");
+  }
+  a();
+  b();
+  c();
+--></script>
+</p>
+
+<h1> FUNCTION #2</h1>
+<h2> スクリプト </h2>
+<pre>
+  function a(x)
+  {
+     document.write("x="+x+", ");
+  }
+  a("1");
+  a("2");
+  a("3");  
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  function a(x)
+  {
+     document.write("x="+x+", ");
+  }
+  a("1");
+  a("2");
+  a("3");  
+--></script>
+</p>
+
+<h1> FUNCTION #3</h1>
+<h2> スクリプト </h2>
+<pre>
+  function a(x,y)
+  {
+     document.write("(x,y)=("+ x +"," + y +"), "  );
+  }
+  a(1,2);
+  a("a","b");
+  a("x","y");  
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  function a(x,y)
+  {
+     document.write("(x,y)=("+ x +"," + y +"), "  );
+  }
+  a(1,2);
+  a("a","b");
+  a("x","y");  
+--></script>
+</p>
+
+<p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

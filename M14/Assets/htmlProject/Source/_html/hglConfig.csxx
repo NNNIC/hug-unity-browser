@@ -1,0 +1,42 @@
+using UnityEngine;
+using System.Collections;
+
+//public enum hglResourceFrom
+//{
+//    NONE,
+//    NET,
+//    RESOURCES,
+//    //ASSETS_WEB_FOLDER,
+//    FILE_FOLDER,
+//    LOCALHOST,
+//}
+
+//public class hglConfig {
+
+//    public static string s_resurl;//
+//    public static string s_neturl;// =          "https://dl.dropbox.com/u/265/";
+//    public static string s_specifiedFolder;// = "/User/XX/";
+//    public static hglResourceFrom  s_resourceFrom;
+//    public static string GetResourceURL()
+//    {
+//        switch (s_resourceFrom)
+//        {
+//            case hglResourceFrom.NET:                return s_neturl;
+//            case hglResourceFrom.RESOURCES:          return Application.dataPath + "/Resources/Web/";
+//            case hglResourceFrom.LOCALHOST:          return "http://localhost/Web/";
+//            //case hglResourceFrom.ASSETS_WEB_FOLDER:  return Application.dataPath + "/Web/";
+//            case hglResourceFrom.FILE_FOLDER:    return s_specifiedFolder;
+//        }
+//        return "";
+//    }
+
+//    public static string GetNetURL()
+//    {
+//        return s_neturl;
+//    }
+
+//    public static hglResourceFrom GetResourceFrom()
+//    {
+//        return s_resourceFrom;
+//    }
+//}

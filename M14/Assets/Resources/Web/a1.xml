@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+ <head>
+  <title>A1</title>
+ </head>
+ <body bgcolor="black">
+
+  <font color="#FF0000" />
+  <h1>A1</h1>
+  <font color="#FFFFFF" />
+
+  <p>意味のまとまりのある段落を書こう</p>
+
+  <ul>
+   <li>内容をリストとして</li>
+
+   
+
+   <li>列挙してもよい</li>
+   <li><a href="a2.xml">リンクです！</a><font color="red" />にリンクもできる<font color="white" /></li>
+  </ul>
+   <p>
+     <img src="sample/40x40/1-1.jpg"></img> 
+     <img src="sample/40x40/1-4.jpg"></img> 
+     <img src="sample/40x40/1-6.jpg"></img> 
+   
+   
+   </p>
+
+   <p> <img src="sample/300x400/1-2.jpg" /> </p>
+  <!-- <p><img src="http://msa.lolipop.jp/toiletdashproduction/test/300x400/1-2.jpg.unity3d" alt="いらっしゃいませ" /></p> -->
+
+  <hr />
+  <footer>
+   <address>
+    何某作;  
+    <a href="mailto:yourmail@domain.com">作者へのメッセージ</a>
+   </address>
+   20YY-MM-DD更新
+  </footer>
+ </body>
+</html>

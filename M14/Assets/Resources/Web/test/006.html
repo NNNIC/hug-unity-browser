@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css"> 
+ </head>
+
+<body>
+
+
+
+<h1> FUNCTION #1 </h1>
+<h2> スクリプト </h2>
+<pre>
+  function test(a)
+   {
+        switch(a)
+        {
+        case 1 : document.write("ans=" + 1); break;
+        case 2 : document.write("ans=" + 2); break;
+        case 3 : document.write("ans=" + 3); break;
+        default: document.write("ans=" + a); break;
+        }
+   }
+
+   test(1);
+   test(2);
+   test(3);
+   test(5);
+</pre>
+
+<h2> 実行 </h2>
+<p>
+<script><!--
+  function test(a)
+   {
+        switch(a)
+        {
+        case 1 : document.write("case 1 :ans=" + 1); break;
+        case 2 : document.write("case 2 :ans=" + 2); break;
+        case 3 : document.write("case 3 :ans=" + 3); break;
+        default: document.write("case 4 :ans=" + a); break;
+        }
+	document.write("<br>");
+   }
+
+   test(1);
+   test(2);
+   test(3);
+   test(5);
+--></script>
+</p>
+
+
+<p> <a href="index.html"> インデックスへ</a> </p>
+</body>
+</html>

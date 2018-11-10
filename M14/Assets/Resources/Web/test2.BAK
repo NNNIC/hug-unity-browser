@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <!--
+  <link rel="top-bar" href="top.html" />
+  <link rel="bottom-bar" href="bot.html" />
+  <link rel="stylesheet" href="style.txt" />
+  -->
+  <style>
+  <!--
+   body     { background:#7f7f7f atlas(Koujicyu)  }
+
+    h1      { font-size:10 ; color:white ; text-align:center ; margin:150 0; text-outline: 2 2 red }
+    h2      { font-size:10 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    p       { font-size:10 ; color:white; text-align:center; text-shadow: 2 2 blue }
+    table   { text-align:center                             }
+    th      { font-size:20 ; color:red  ; text-align:center }
+    td      { font-size:10 ; color:white; text-align:left   }
+    .note   { color:yellow }
+    .emp    { color:red    }
+    .rotate { update-z-axis:100 }
+	-->
+  </style>
+  <script>
+  <!--
+   function Test()
+   {
+        var go = canvas.gameObject;
+        go.transform.localPosition = Vector3.zero;
+   }
+  -->
+ </head>
+ <body>
+  <p>
+   キャンバステスト 上
+  </p>
+  <canvas id="#canvas" />
+  <script>
+  <!--
+   var v = new Vector3(1.0,2.0,3.0);
+   Debug.LogError(">>>>>>>>>> v= " + v); 
+   Debug.LogError(">>>>>>>>>> v= " + v.x); 
+   function Click()
+   {
+	canvas = document.getElementById("#canvas");
+	var v = GetCanvasPosition();
+	Debug.Log(v);
+        CreateOspray();
+      
+   }
+   -->
+  </script>
+  <p>
+    <a onclick="Test()">ここを押してください</a>
+  </p>
+  
+</body>
+</html>

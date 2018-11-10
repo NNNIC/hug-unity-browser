@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  <!--
+        var a = 0.1;
+
+	function TitleUpdate(){
+	    transform.RotateAroundLocal(Vector3.forward, a);
+	}
+
+        function TitleSpeedUp()   { a = a+0.01; }
+        function TitleSpeedDown() { a = a-0.01; }
+        function TitleStop()      { a = 0.0;    }
+
+        function Reset() { Application.LoadLevel(0); }
+  -->
+ </script>
+ </head>
+
+ <body>
+  <h1> 回転制御 </h1>
+  <div style="text-align:center">
+   <img src="../images/Doyoulab.jpg" width="200" height="100" style="margin-left:50"  onupdate="TitleUpdate()"  /> 
+  </div>
+  <p>
+        <br>
+        <br>
+	<div style="font-size:40; color:white;"> <a onClick="TitleSpeedUp()">回転力+1</a> </div>
+        <br>
+        <div style="font-size:40; color:white;"><a onClick="TitleSpeedDown()">回転力-1</a> </div>  
+        <br>
+        <div style="font-size:40; color:white;"><a onClick="TitleStop()">ストップ</a>   </div>
+        <br>
+        <br>
+        <br>
+        <br>
+	<a class="emp"  onClick="Reset()">リセット</a>
+        <br>
+        <br>
+  </p>
+  <p> <a href="index.html"> インデックスへ</a> </p>
+  
+</body>
+</html>

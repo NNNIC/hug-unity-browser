@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+<head>
+  <title>test</title>
+</head>
+<body style="width:200">
+どこからかい<img src="images/z_1.jpg" width=50 align="left" />回り込みテスト。
+<br>回り込みテスト
+<br clear="left">どうですか？<br>
+<hr>
+どこからかいぎょうするのか<img src="images/z_1.jpg" width=50 align="left" />回り込みテスト。
+<br>回り込みテスト
+<br clear="left">どうですか？
+<hr>
+右に<img src="images/z_1.jpg" width=50 align="right" />おいてみるよ。
+どうだろうか？
+<hr>
+<br clear="left">
+<br>
+<hr>
+真ん中に<img src="images/z_1.jpg" width=50 align="center" />おいてみるよ。
+<hr>
+両<img src="images/z_1.jpg" width=50 align="right" />脇<img src="images/z_1.jpg" width=50 align="left" />においてみるよ。
+<br clear="left">
+左<img src="images/z_1.jpg" width=50 align="left" />に<img src="images/z_1.jpg" width=50 align="left" />２つ並べてみるよ。
+<hr>
+<br clear="left">
+<hr>
+真<img src="images/z_1.jpg" width=50 align="center" />
+両<img src="images/z_1.jpg" width=50 align="left" />脇<img src="images/z_1.jpg" width=50 align="right" />においてみるよ。
+左<img src="images/z_1.jpg" width=50 align="left" />に<img src="images/z_1.jpg" width=50 align="left" />２つ並べてみるよ。
+わけのわからないアルゴリズムだー。
+<hr>
+<br clear="left">
+アルゴリズムが難しいので、サポートを絞るのはどうだ。
+<img src="images/z_1.jpg" width=50 align="left" />左端にないとかってに改行されってのはどうだ。いちいちＹの位置を計算せずにすむ。
+<br clear="right">
+<img src="images/z_1.jpg" width=50 align="right" />かかれた次の行からが回り込みをするってのは。
+<br clear="left">
+<img src="images/z_1.jpg" width=50 align="left" /><img src="images/z_1.jpg" width=50 align="right" />とかかれたら、その間のみになる。
+うまくやるのは難しいからだいたいで妥協しよう。
+きれいにやりたかったらテーブルを使うべきだろう。
+</body>
+</html>

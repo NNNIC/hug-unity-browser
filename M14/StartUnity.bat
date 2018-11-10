@@ -1,0 +1,1 @@
+start "" "C:\Program Files (x86)\Unity\Editor\Unity.exe" -projectpath "%~dp0\."

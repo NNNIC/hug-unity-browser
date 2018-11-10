@@ -1,0 +1,14 @@
+  body    { background:#7f7f7f atlas(Koujicyu2)  }
+
+    h1     { font-size:30  ; color:red ; text-align:left ; margin:10 10; text-outline: 2 0 white}
+    h1x     { font-size:30 ; color:red ; text-align:left ; margin:10 10; text-outline: 2 0 white }
+    h2     { font-size:25 ; color:blue ; text-align:left  ; text-outline: 2 0 white}
+    pre    { font-size:20 ; color:white; text-align:left; text-shadow: 2 2 blue; margin:10 10 10 10; border: 3 green inset;  }
+    p      { font-size:20 ; color:white; text-align:left; text-shadow: 2 2 red; margin:10 10 10 10; border: 3 blue inset;   }
+    tablex  { text-align:center                              }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:20 ; color:white; text-align:left; text-shadow: 2 2 blue; margin:10 10  }
+    table  { margin:10 auto 10 auto }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }

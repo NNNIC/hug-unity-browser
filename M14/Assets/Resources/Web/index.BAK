@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <!--
+  <link rel="top-bar" href="top.html" />
+  <link rel="bottom-bar" href="bot.html" />
+  <link rel="stylesheet" href="style.txt" />
+  -->
+  <style>
+  <!--
+   body    { background:#7f7f7f atlas(Koujicyu)  }
+
+    h1     { font-size:10 ; color:white ; text-align:center ; margin:150 0; text-outline: 2 2 red }
+    h2     { font-size:10 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    p      { font-size:30 ; color:white; text-align:center; text-shadow: 2 2 blue }
+    table  { text-align:center                              }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:10 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }
+	-->
+  </style>
+ </head>
+
+ <body>
+ <p>
+ <a href=demo_1/p0.html                > 説明とデモ</a>     <br> <br>
+ <a href=http://tohoho-web.com/www.htm > html再現テスト（「とほほWWW入門」にリンク【外部】）</a> <br> <br>
+ <a href=tohoho_all/www.htm            > html再現テスト（「とほほWWW入門」にリンク【内部キャッシュ】）</a> <br> <br>
+ <a href=ns/index.htm                  > ナイトスタイル</a> <br> <br>
+ </body>
+</html>

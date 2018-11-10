@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+  <!--
+   
+   function Load( model )
+   {
+       var prefab = Resources.Load(model);
+       var go     = Object.Instantiate(prefab);
+       go.transform.parent=canvas.gameObject.transform;
+
+       go.transform.localScale = Vector3.one * 8;
+       go.transform.localPosition= Vector3.zero;
+       go.transform.localEulerAngles = Vector3.zero;
+       
+       return go;
+   }
+
+   once = 0;
+   function INIT()
+   {
+        if (once==1) return;
+        once = 1;
+	canvas = document.getElementById("#canvas");
+        Debug.Log(">>>>>>>>>>>>>>"+canvas.rect);
+	for(i=0;i<100;i++)
+        {
+           modelStar[i] = Load("Star-boy");
+        }
+        
+        var tl_x = canvas.rect._leftX;
+        var tl_y = canvas.rect._topY;
+	Debug.Log(tl_x.ToString() + "," + tl_y.ToString());
+        
+        var x = 30;
+        var xmax = 480 - 30;
+        var y = -30;
+        var step = (xmax - x)/9;
+        for(j = 0; j<10; j++)
+        {
+            for(i = 0; i < 10; i++)
+            {
+                modelStar[j*10+i].transform.localPosition = new Vector3(tl_x + x+step * i, tl_y + y - step * j);
+                var cmup = modelStar[j*10+i].AddComponent("cmObjUpdate");
+                cmup.m_Y_Axis_speed = 200;
+            }
+        }
+   }
+   
+  -->
+ </script>
+ </head>
+ <body style="backgound:white atlas(white)" >
+  <h1>デモ</h1>
+  <p>
+   ※右横のソースボタンで確認下さい。
+  </p>
+  <canvas id="#canvas" width=480 height=480 style="text-align:center; background-color:gray" />
+  <script>
+  <!--
+   function CREATE()
+   {
+	canvas = document.getElementById("#canvas");
+	var v = GetCanvasPosition();
+        CreateOspray();
+   }
+   -->
+  </script>
+  <p>
+    <a onclick="INIT()">スタート!</a> <br><br>
+    <a href="index.html"> インデックスへ</a> 
+  </p>
+</body>
+</html>

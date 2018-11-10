@@ -1,0 +1,122 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" ></meta>
+ <head>
+  <title>INDEX1</title>
+  <!--
+  <link rel="top-bar" href="top.html" />
+  <link rel="bottom-bar" href="bot.html" />
+  <link rel="stylesheet" href="style.txt" />
+  -->
+  <style>
+  <!--
+   body    { background:#7f7f7f atlas(Koujicyu)  }
+
+    h1     { font-size:10 ; color:white ; text-align:center ; margin:150 0; text-outline: 2 2 red }
+    h2     { font-size:10 ; color:blue ; text-align:center  ; text-outline: 2 2 white}
+    pre    { font-size:10 ; color:white; text-align:left; text-shadow: 2 2 blue }
+    p      { font-size:10 ; color:white; text-align:left; text-shadow: 2 2 red; margin:20 20 }
+    table  { text-align:center                              }
+    th     { font-size:20 ; color:red  ; text-align:center }
+    td     { font-size:10 ; color:white; text-align:left   }
+    .note  { color:yellow }
+    .emp   { color:red    }
+    .rotate { update-z-axis:100 }
+	-->
+  </style>
+ </head>
+<h1> TEST 1 <h1>
+<pre>
+  document.write(1);
+  document.write(123);
+  document.write(123.4);
+  document.write(123.4 + 10);
+  document.write(123 + 10);
+  document.write(123 + 10.5);
+  document.write("A");
+  document.write("ABC");
+  document.write("ABC" + "def");
+</pre>
+<p>
+<script><!--
+  document.write(1);
+  document.write(123);
+  document.write(123.4);
+  document.write(123.4 + 10);
+  document.write(123 + 10);
+  document.write(123 + 10.5);
+  document.write("A");
+  document.write("ABC");
+  document.write("ABC" + "def");
+// --></script>
+</p>
+
+ <!-- 
+	function TitleUpdate(){
+          if (a==1) Debug.Log("yes");
+          else Debug.Log("no");
+	}
+ -->
+  <!--
+        var a = 0;
+	function TitleUpdate(){
+          if (a==0) 
+	  {
+		Debug.Log(a);
+                a = 1;
+          }
+          else if (a==1) 
+          {
+               Debug.Log(a);
+               a=2;
+          } 
+          else if (a==2)
+          {
+              Debug.Log(a);
+               a=3;
+          }
+          else 
+          {
+              Debug.Log(a);
+              a =0;
+          }
+
+	}
+  -->
+
+ <body>
+      <script> <!--
+      i = 0;
+      document.write("<p>");
+      while(i<10) {
+          document.write("i="+i/*ほげほげ*/ +"\n"); //ほげほげ
+          if (i==3) break;
+          i++;
+      }
+      document.write("</p>");
+
+      
+   
+
+      --> </script>
+
+  <div style="text-align:center">
+   <img src="images/Doyoulab.jpg" width="200" height="100" style="margin-left:50"    /> 
+  </div>
+  <p>
+        <br>
+        <br>
+	<a onClick="TitleSpeedUp()">回転力+1</a>
+        <br>
+        <a onClick="TitleSpeedDown()">回転力-1</a>   
+        <br>
+        <a onClick="TitleStop()">ストップ</a>   
+        <br>
+        <br>
+        <br>
+        <br>
+	<a class="emp"  onClick="Reset()">リセット</a>
+        <br>
+        <br>
+  </p>
+</body>
+</html>
